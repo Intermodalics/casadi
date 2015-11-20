@@ -1,3 +1,9 @@
+casadi (2.4.1-1) UNRELEASED; urgency=low
+
+  * rebuild with coinor-ipopt version 3.11.9-2 from https://github.com/ghorn/debian-coinor-ipopt/tree/debian/3.11.9-2
+
+ -- Intermodalics <info@intermodalics.eu>  Fri, 20 Nov 2015 19:58:22 +0100
+
 casadi (2.4.1) UNRELEASED; urgency=low
 
   * Imported upstream version 2.4.1 from https://github.com/Intermodalics/casadi/commit/c73550ba54a16776f03be6fdc5ab92471315e1ad
