@@ -1,3 +1,9 @@
+casadi (2.4.1) UNRELEASED; urgency=low
+
+  * Imported upstream version 2.4.1 from https://github.com/Intermodalics/casadi/commit/c73550ba54a16776f03be6fdc5ab92471315e1ad
+
+ -- Intermodalics <info@intermodalics.eu>  Fri, 20 Nov 2015 16:22:36 +0100
+
 casadi (2.2.0) UNRELEASED; urgency=low
 
   * Initial Release (closes #745758)

@@ -1,26 +1,48 @@
-usr/lib/casadi/libcasadi_implicitfunction_newton.so
-usr/lib/casadi/libcasadi_implicitfunction_nlp.so
+# Explicit Runge-Kutta integrator
+usr/lib/libcasadi_integrator_rk.so*
 
-usr/lib/casadi/libcasadi_integrator_collocation.so
-usr/lib/casadi/libcasadi_integrator_rk.so
+# Collocation integrator
+usr/lib/libcasadi_integrator_collocation.so*
 
-usr/lib/casadi/libcasadi_linearsolver_symbolicqr.so
-usr/lib/casadi/libcasadi_lpsolver_qp.so
+# Old (all-at-once) collocation integrator
+usr/lib/libcasadi_integrator_oldcollocation.so*
+usr/lib/libcasadi_implicitfunction_newton.so*
+usr/lib/libcasadi_homotopynlpsolver_simple.so*
 
-usr/lib/casadi/libcasadi_qpsolver_nlp.so
-usr/lib/casadi/libcasadi_qpsolver_qcqp.so
+# SQPMethod -  A basic SQP method
+usr/lib/libcasadi_nlpsolver_sqpmethod.so*
 
+# SCPgen -  An implementation of Lifted Newton SQP
+usr/lib/libcasadi_nlpsolver_scpgen.so*
 
-usr/lib/casadi/libcasadi_socpsolver_sdp.so
+# StabilizedSQP -  An implementation of Stabilized SQP
+usr/lib/libcasadi_nlpsolver_stabilizedsqp.so*
 
-usr/lib/casadi/libcasadi_stabilizedqpsolver_qp.so
+usr/lib/libcasadi_dplesolver_simple.so*
+usr/lib/libcasadi_dplesolver_condensing.so*
+usr/lib/libcasadi_dplesolver_lifting.so*
+usr/lib/libcasadi_dlesolver_simple.so*
+usr/lib/libcasadi_lrdplesolver_lifting.so*
+usr/lib/libcasadi_lrdlesolver_fixed_smith.so*
+usr/lib/libcasadi_dlesolver_fixed_smith.so*
+usr/lib/libcasadi_dplesolver_lrdple.so*
+usr/lib/libcasadi_dlesolver_lrdle.so*
+usr/lib/libcasadi_lrdlesolver_dle.so*
+usr/lib/libcasadi_dlesolver_dple.so*
+#usr/lib/libcasadi_lrdlesolver_lrdple.so*
+usr/lib/libcasadi_lrdplesolver_dple.so*
+usr/lib/libcasadi_clesolver_simple.so*
 
-# these need cholesky right now:
-#usr/lib/casadi/libcasadi_qcqpsolver_socp.so
-#usr/lib/casadi/libcasadi_sdqpsolver_sdp.so
+# Reformulations
+usr/lib/libcasadi_qpsolver_nlp.so*
+usr/lib/libcasadi_implicitfunction_nlp.so*
+usr/lib/libcasadi_lpsolver_qp.so*
+usr/lib/libcasadi_qpsolver_qcqp.so*
+usr/lib/libcasadi_socpsolver_sdp.so*
+usr/lib/libcasadi_stabilizedqpsolver_qp.so*
+usr/lib/libcasadi_linearsolver_symbolicqr.so*
 
-# these aren't ready for outside use as far as I know:
-#usr/lib/casadi/libcasadi_nlpsolver_sqpmethod.so
-#usr/lib/casadi/libcasadi_homotopynlpsolver_simple.so
-#usr/lib/casadi/libcasadi_nlpsolver_stabilizedsqp.so
-#usr/lib/casadi/libcasadi_nlpsolver_scpgen.so
+#if(WITH_CSPARSE)
+usr/lib/libcasadi_qcqpsolver_socp.so*
+usr/lib/libcasadi_sdqpsolver_sdp.so*
+#endif()
